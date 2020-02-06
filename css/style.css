@@ -168,10 +168,23 @@ p {
     #header {
      float: left;
     }
+    #main-container {
+        float: left;
+        text-align: left;
+    }
   }
   
-  @media (max-width: 560px) {
+  @media (max-width: 400px) {
     #header {
-      float: left;
+    }
+    #main-container {
+        float: left;
+    }
+    #me {
+        background-color:  #f8adff;
+    }
+    nav {
+        float: left;
+        text-align: left;
     }
   }
