@@ -174,14 +174,15 @@ p {
     }
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 560px) {
     #header {
     }
     #main-container {
         float: left;
     }
     #me {
-        background-color:  #f8adff;
+        background-color:  #c660cf93;
+        color:  rgb(255, 223, 193);
     }
     nav {
         float: left;
