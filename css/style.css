@@ -3,22 +3,23 @@ html {
     line-height: 28px;
     font-size: 18px;
     color: #777777;
-    background: url("./110099full\ \(1\).jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.103)), url("./110099full\ \(1\).jpg");
 }
 * {
     box-sizing: border-box;
 }
-
+/* 
 .container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
-}
+} */
 #me {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     margin-top: 50px;
+    margin-left: -1190px;
     text-decoration: none;
     color: #a237ac;
 }
@@ -52,16 +53,9 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-#header {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-}
 nav {
     list-style: none;
-    float: right;
+    margin-left: 450px;
 }
 .nav-names li {
     display: inline-block;
@@ -77,6 +71,12 @@ nav {
 .nav-names li a:hover {
     border: 2px solid  rgb(255, 223, 193);
 }
+#bio {
+    margin-right: 50px;
+}
+#portfolio {
+    margin-right: 50px;
+}
 
 .content {
     padding-top: 130px;
@@ -89,7 +89,7 @@ nav {
     max-width: 960px;
     height: fit-content;
     padding: 30px;
-    margin: 0 0 40px;
+    margin-top: 100px;
     background: rgba(95, 49, 95, 0.418);
 }
 .main-section {
@@ -141,7 +141,8 @@ input[type=submit] {
     background: rgba(95, 49, 95, 0.418);
 }
 #trivia {
-    height: 35vh;
+    padding-top: 50px;
+    height: 32vh;
 }
 #psychic {
     height: 35vh;
@@ -161,6 +162,51 @@ input[type=submit] {
 p {
     color: rgb(255, 255, 255);
 }
+#trivia-button {
+    cursor: pointer;
+    background-color: rgb(155, 16, 120);
+    color: rgb(255, 242, 224);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #fff3da;
+    border-radius: 8px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: rgba(0, 0, 0, 0.103);
+    color: black;
+  }
+  .flip-card-back {
+    background-color: rgba(0, 0, 0, 0.103);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  h3 {
+      padding-top: 50px;
+  }
 @media (max-width: 960px) {
   }
   
@@ -175,8 +221,6 @@ p {
   }
   
   @media (max-width: 560px) {
-    #header {
-    }
     #main-container {
         float: left;
     }

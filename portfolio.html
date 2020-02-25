@@ -9,10 +9,25 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-        <header id="header">
-                <div class="box">
-                  <a href="index.html" id="me">Chelsea Jackson</a>
-            </header>
+  <header id="header">
+    <div class="box">
+      <nav>
+        <ul class="nav-names">
+            <!-- <li><a href="index.html" id="me">CHELSEA JACKSON</a></li> -->
+          <li id="bio"><a href="https://chelsea-exe.github.io/">BIOGRAPHY</a></li>
+          <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+          <li id="contact"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+            <!-- <nav>
+              <ul class="nav-names">
+                <li><a href="https://chelsea-exe.github.io/">BIO</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav> -->
             <br>
             <div id="main-container" class="container">
                     <section class="main-section">
@@ -21,14 +36,24 @@
                         <p>Here is a few of my application work. These work mainly involve front end development of HTML, CSS <br>
                          and Javascript. To view my code work click on the following images below and each will lead to my <br>
                         github work page. Thank you for taking a look at my work and be sure to contact me soon.</p>
-                        <div id="psychic-game">
-                          <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic">
+                        <div class="flip-card">
+                          <!-- <h3>The Psychic Game</h3>
+                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                            <img src="./images/updated-trivia.png" alt="90 game" id="trivia">
+                            </div>
+                            <div class="flip-card-back">
+                              <h3>Powerful Women Gifs</h3>
+                              <p id="card">Using the GIPHY API user can add </p>
+                              <a href="women.html"><button id="trivia-button">Open Page</button></a>
+                            </div>
+                          </div>
                         </div>
-                        <div id="trivia-game">
+                        <!-- <div id="trivia-game">
                           <h3>90's Trivia</h3>
                           <a href="https://github.com/Chelsea-exe/unit-4-game.git"><img src="./images/updated-trivia.png" alt="90 game" id="trivia"></a>
-                        </div>
+                        </div> -->
                         <div id="crystal-game">
                           <h3>Crystal Game</h3>
                           <a href="https://github.com/Chelsea-exe/Trivia-Game.git"><img src="./images/crystal.png" alt="stone" id="crystal"></a>
