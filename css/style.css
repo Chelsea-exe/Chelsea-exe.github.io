@@ -52,10 +52,15 @@ h1 {
     border-bottom: 5px solid #e585ee;
     font-family: 'Playfair Display', serif;
 }
-
-nav {
+#header {
+    background: rgba(102, 101, 97, 0.212);
+    height: 45px;
+    border-radius: 20px;
+}
+.nav-names {
     list-style: none;
     margin-left: 450px;
+    padding-top: 8px;
 }
 .nav-names li {
     display: inline-block;
@@ -140,7 +145,7 @@ input[type=submit] {
     margin: 0;
     background: rgba(95, 49, 95, 0.418);
 }
-#trivia {
+#game {
     padding-top: 50px;
     height: 32vh;
 }
@@ -177,6 +182,7 @@ p {
     border-radius: 8px;
 }
 .flip-card {
+    margin-top: 20px;
     background-color: transparent;
     width: 400px;
     height: 300px;
