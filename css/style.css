@@ -26,7 +26,31 @@ html {
 #me:hover {
     border: 2px solid  rgb(255, 223, 193); 
 }
-
+#image-me {
+    height: 45vh;
+}
+#introduction {
+    padding-left: 20px;
+}
+.card {
+    background-color: rgb(255, 246, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    float: left;
+    text-align: center;
+}
+.icon {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+#chelsea {
+    color: grey;
+}
+#title {
+    color: grey;
+    font-size: 18px;
+  }
 h1,
 h2,
 h3,
@@ -53,7 +77,7 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 #header {
-    background: rgba(102, 101, 97, 0.212);
+    background: rgba(34, 32, 26, 0.521);
     height: 45px;
     border-radius: 20px;
 }
@@ -67,7 +91,7 @@ h1 {
 }
 
 .nav-names li a {
-    color: #8d1a97;
+    color: #e585ee;
     text-decoration: none;
     padding: 5px 20px;
     font-size: 18px;
@@ -147,10 +171,11 @@ input[type=submit] {
 }
 #game {
     padding-top: 50px;
-    height: 32vh;
+    height: 33vh;
 }
 #psychic {
-    height: 35vh;
+    padding-top: 50px;
+    height: 33vh;
 }
 #train-schedule {
     height: 35vh;
@@ -158,22 +183,30 @@ input[type=submit] {
 #crystal {
     height: 35vh;
 }
-#powerful {
-    height: 35vh;
-}
+ #women-giphy {
+     padding-top: 40px;
+     height: 35vh;
+     width: 26vw;
+ }
 #negotiator {
-    height: 35vh;
+    padding-top: 50px;
+    height: 33vh;
+}
+#software {
+    padding-top: 60px;
+    height: 33vh;
 }
 p {
     color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
-#trivia-button {
+/* #trivia-button {
     cursor: pointer;
     background-color: rgb(155, 16, 120);
     color: rgb(255, 242, 224);
     padding: 10px 20px;
     border-radius: 8px;
-}
+} */
 #github-button {
     cursor: pointer;
     background-color: rgb(155, 16, 120);
@@ -181,10 +214,18 @@ p {
     padding: 10px 20px;
     border-radius: 8px;
 }
+#App-button {
+    cursor: pointer;
+    background-color: rgb(155, 16, 120);
+    color: rgb(255, 242, 224);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
 .flip-card {
-    margin-top: 20px;
+    display: inline-block;
+    margin-top: 25px;
     background-color: transparent;
-    width: 400px;
+    width: 420px;
     height: 300px;
     border: 2px solid #fff3da;
     border-radius: 8px;
@@ -209,7 +250,7 @@ p {
     backface-visibility: hidden;
   }
   .flip-card-front {
-    background-color: rgba(95, 49, 95);
+    background-image: linear-gradient(rgb(109, 65, 109), rgb(255, 231, 153));
     color: black;
     border-radius: 8px;
   }
