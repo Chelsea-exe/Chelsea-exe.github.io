@@ -29,8 +29,8 @@ html {
 #image-me {
     height: 45vh;
 }
-#introduction {
-    padding-left: 20px;
+#paragraph {
+    margin-right: 20px;
 }
 .card {
     background-color: rgb(255, 246, 255);
