@@ -30,7 +30,7 @@ html {
     height: 45vh;
 }
 .card {
-    background-color: rgb(255, 246, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     float: left;
@@ -94,10 +94,22 @@ h1 {
     padding: 5px 20px;
     font-size: 18px;
 }
+#title {
+    font-size: 16px;
+}
+#skills-title {
+    color: rgb(121, 121, 121);
+    margin-left: 20px;
+}
+.skills li {
+    color: rgb(170, 34, 170);
+    list-style: none;
+}
 
 .nav-names li a:hover {
     border: 2px solid  rgb(255, 223, 193);
 }
+
 #bio {
     margin-right: 50px;
 }
