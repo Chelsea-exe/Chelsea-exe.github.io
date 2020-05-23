@@ -218,20 +218,20 @@ p {
     padding: 10px 20px;
     border-radius: 8px;
 } */
-#github-button {
+button {
     cursor: pointer;
     background-color: rgb(155, 16, 120);
     color: rgb(255, 242, 224);
     padding: 10px 20px;
     border-radius: 8px;
 }
-#App-button {
+/* #App-button {
     cursor: pointer;
     background-color: rgb(155, 16, 120);
     color: rgb(255, 242, 224);
     padding: 10px 20px;
     border-radius: 8px;
-}
+} */
 .flip-card {
     display: inline-block;
     margin-top: 25px;
