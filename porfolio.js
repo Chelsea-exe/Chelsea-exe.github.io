@@ -16,7 +16,7 @@ $(document).ready(function() {
         console.log("giphy app tab");
     });
     $("#crystal-github").click(function() {
-        window.open("https://github.com/Chelsea-exe/GifTastic", "_blank");
+        window.open("https://github.com/Chelsea-exe/Crystal-Collector-Game", "_blank");
         console.log("crystal github tab");
     });
     $("#crystal-app").click(function() {
