@@ -20,7 +20,7 @@ $(document).ready(function() {
         console.log("crystal github tab");
     });
     $("#crystal-app").click(function() {
-        window.open("https://github.com/Chelsea-exe/Crystal-Collector-Game", "_blank");
+        window.open("https://crystalcollector.netlify.app/", "_blank");
         console.log("crystal app tab");
     });
     $("#negotiator-github").click(function() {
