@@ -4,59 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chelsea's Bio</title>
-  <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display&display=swap" rel="stylesheet">
+  <title>Chelsea-Exe.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7c7ff150ec.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-  <header id="header">
-      <div class="box">
-        <nav>
-          <ul class="nav-names">
-              <!-- <li><a href="index.html" id="me">CHELSEA JACKSON</a></li> -->
-            <li id="bio"><a href="https://chelsea-exe.github.io/">BIOGRAPHY</a></li>
-            <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
-            <li id="graphic"><a href="https://magicamulet.carbonmade.com/">GRAPHIC DESIGN</a></li>
-            <!-- <li id="contact"><a href="contact.html">CONTACT</a></li> -->
-          </ul>
-          </nav>
-        </div>
-        
-  </header>
-  <br>
-
-  <div class="main">
-      <h1>Biography</h1>
-      <div class="card">
-        <img src="./images/20190806_072017592_iOS.jpg" id="image-me">
-        <h2 id="chelsea">Chelsea S. Jackson</h2>
-        <p id="title">Graphic Designer, Photographer & Software Developer</p>
-        <h3 id="skills-title">Languages</h3>
-        <ul class="skills">
-          <li id="html-css">HTML & CSS</li>
-          <li id="java">JavaScript</li>
-          <li id="jquery">Jquery</li>
-          <li id="react">React</li>
+  <div class="container-fluid">
+    <header>
+      <nav>
+        <ul class="nav-names">
+          <li id="home"><a href="index.html"><img class="logo" src="./images/logo/pink charm.png"></a></li>
+          <li id="bio"><a href="about.html">ABOUT</a></li>
+          <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+          <li id="graphic"><a href>GRAPHIC DESIGN</a></li>
+          <!-- <li id="contact"><a href="contact.html">CONTACT</a></li> -->
+          <hr>
         </ul>
-        <a class="icon" href="https://github.com/Chelsea-exe?tab=repositories"><i class="fa fa-github"></i></a>
-        <a class="icon" href="https://www.linkedin.com/in/chelsea-s-jackson/"><i class="fa fa-linkedin"></i></a>
-        <br>
-        <a id="gmail" href="mailto:c.sjackson726@gmail.com" subject="HTML link"><button type="button" id="email">Email Me</button></a>
+        </nav>
+    </header>
+    <br>
+    <div class="banner-image">
+      <h1 id="banner-header">Chelsea Jackson</h1>
+      <p id="banner-sub">Developer, Designer and Photographer.</p>
+    </div>
+    <br>
+    <!-- <hr id="line-break"> -->
+    <div id="cards-div">
+      <h1 id="feature-header">Featured Work</h1>
+      <p id="feat-sub">Selected work displaying Front-End web development.</p>
+      <div class="row" id="card-row">
+        <div class="col-sm">
+          <div class="card" id="bio-card">
+            <img src="./images/20190806_072017592_iOS-50.jpg" class="card-img-top" id="avi" alt="profile-pic">
+            <div class="card-body">
+              <h5 class="card-title" id="bio-title">About Chelsea</h5>
+              <p class="card-text">Learn more about the artist Chelsea Jackson.</p>
+            </div>
+            <div class="card-body" id="bio-button">
+              <button id="bio-html">About Me</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" id="gif-card" style="width: 18rem;">
+            <img src="./images/ReadME-screenshot.jpg" id="gifs" class="card-img-top" alt="gif-api">
+            <div class="card-body">
+              <h5 class="card-title" id="gifs-title">Powerful Women Gifs</h5>
+              <p class="card-text">Using the GIPHY API user can add buttons and search women gifs.</p>
+            </p>
+            </div>
+            <div class="card-body" id="gifs-buttons">
+              <button id="gifs-app">Application</button>
+              <button id="gifs-github">Github</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" id="software-card" style="width: 18rem;">
+            <img src="./images/software-game.png" class="card-img-top" id="software" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer Trivia</h5>
+              <p class="card-text">Timed test game about various Software Engineering skills and topics.</p>
+            </div>
+            <div class="card-body" id="software-buttons">
+              <button id="software-app">Application</button>
+              <button id="software-github">Github</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="paragraph">
-        <p id="introduction">Hello ! My name is Chelsea, currently a resident in Atlanta, Georgia. I'm a young individual who is always ready to learn, be productive, be a teammate and is currently looking for any entry level job matching my skill set of Graphic Design, UI Design, Web Development. I have graduated from Georgia Perimeter College in May 2015 with my Associates of Arts, Georgia State University in May 2019 with a Bachelor's in Arts concentrated with Graphic Design.
-        I completed the Georgia Tech Coding Bootcamp program in February 2020 and I'm very proficient in HTML, CSS, JavaScript, Jquery, React and VSCode. Also proficient with Adobe Photoshop, Illustrator and InDesign. <br> Quick facts about me, I love going to concerts, my favorite music is Hip Hop, R&B, Pop and pretty much anything that catches my ear. My favorite artists are Beyonce, H.E.R, J. Cole and 2Pac. I love watching sports, my favorite team is the New Orleans Saints my favorite player from the team is Michael Thomas. My favorite basketball team is the New Orleans Pelicans,
-        it was the Lakers but when the city got a basketball team again I jumped ship I currently don't have a favorite player but I do like Zion Williamson and Brandon Ingram. My favorite basketball player of all time is Kobe Bean Bryant, MAMBA MENTALITY he's forever my G.O.A.T, plus he won a Oscar and Emmy after winning 5
-        NBA Championship, if he really wanted to he could've won a Grammy, only he can do that. I follow his mentality in anything I do, meaning I'm always curious, then begin to be obsessive and always making strives to become a better me or as he would say "Are you a different animal but the same BEAST?" If you seen that commerical you know what I'm talking about.
-        <br>Around the age of 16 I began to play with Corel Paint Shop Pro that's when I discover the magic of graphic designing. Later I discovered Adobe Photoshop when people would "jail break" it so I was using it for free and that opened a whole new doors of creativity, with those two programs I used to create collages and gifs for my classmates MySpace and Facebook page in High School. 
-        My first major design was a flyer for a Halloween Party hosted by my friend and that's when I fell in love more with designing. I love photography, I started taking photos for my own hobby and would do it at concerts by the time I gotten to Georgia Perimeter College, I took a photography class and started to really love the camera. Now I like to tell stories with the camera and use it 
-        to help with my designing process with UI and Graphic Design. I started coding simple html, css designs during the MySpace era of the internet, I didn't know it was a actual skill until recently which led me to Georgia Tech Coding Bootcamp course. Feel free to view my portfolio thank you for taking the time to do so. I hope to meet you soon to display the skills I have obtain during my studies. 
-        To contact me click on the "Email Me" button on my profile card, once again thank you.
-      </p>
+    </div>
+    <footer>
+      <div class="container wrap">
+        <div id="footer-header">
+          <h3 id="header">Chelsea Jackson<i class="far fa-copyright fa-xs" id="cj-copyright"></i></h3>
+        </div>
+        <div class="row">
+          <ul id="footer-names">
+            <button class="footer-buttons" id="email"><li><h5>Email</h5></button></li>
+            <button class="footer-buttons"><li id="github"><h5>Github</h5></li></button>
+            <button class="footer-buttons"><li id="linkedin"><h5>LinkedIn</h5></li></button>
+          </ul>
+        </div>
       </div>
+    </footer>
   </div>
-
-
+  <script src="index.js"></script>
 </body>
 </html>

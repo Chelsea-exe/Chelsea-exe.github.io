@@ -1,142 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chelsea Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelsea Exe Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7c7ff150ec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>
-  <header id="header">
-    <div class="box">
+  <div class="container-fluid">
+    <header>
       <nav>
         <ul class="nav-names">
-            <!-- <li><a href="index.html" id="me">CHELSEA JACKSON</a></li> -->
-          <li id="bio"><a href="https://chelsea-exe.github.io/">BIOGRAPHY</a></li>
+          <li id="home"><a href="index.html"><img class="logo" src="./images/logo/pink charm.png"></a></li>
+          <li id="bio"><a href="about.html">ABOUT</a></li>
           <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
-          <li id="graphic"><a href="https://magicamulet.carbonmade.com/">GRAPHIC DESIGN</a></li>
+          <li id="graphic"><a href>GRAPHIC DESIGN</a></li>
           <!-- <li id="contact"><a href="contact.html">CONTACT</a></li> -->
+          <hr>
         </ul>
         </nav>
-      </div>
     </header>
-            <br>
-            <div id="main-container" class="container">
-                    <section class="main-section">
-                      <div class="work">
-                        <h1>Portfolio</h1>
-                        <p>Here is a few of my application work. These work mainly involve front end development of HTML, CSS <br>
-                         and Javascript. To view my code work click on the following images below and each will lead to my <br>
-                        github work page. Thank you for taking a look at my work and be sure to contact me soon.</p>
-                        <br>
-                        <div class="flip-card">
-                          <!-- <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="./images/updated-trivia.png" alt="90 game" id="game">
-                            </div>
-                            <div class="flip-card-back">
-                              <h3>90's Trivia Game</h3>
-                              <p id="card">Using Vanilla Javascript and Jquery user can play a 90's Pop Trivia Game.</p>
-                              <!-- <a href="women.html"><button id="trivia-button">Open Page</button></a> -->
-                              <button id="trivia-github">View Github</button>
-                              <button id="trivia-app">View Application</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flip-card">
-                          <!-- <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="./images/ReadME-screenshot.jpg" alt="women" id="women-giphy">
-                            </div>
-                            <div class="flip-card-back">
-                              <h3>Powerful Women Gifs</h3>
-                              <p id="card">Using the GIPHY API user can add buttons and search women gifs</p>
-                              <!-- <a href="women.html"><button id="trivia-button">Open Page</button></a> -->
-                              <button id="gif-github">View Code</button>
-                              <button id="gif-app">View Application</button>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="flip-card">
-                          <!-- <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="./images/readME-Crystal-Collector.jpg" alt="crystal-collector" id="crystal">
-                            </div>
-                            <div class="flip-card-back">
-                              <h3>The Crystal Collector Game</h3>
-                              <p id="card">Using Vanilla Javascript and Jquery user tries to match a random number by clicking on crystals</p>
-                              <!-- <a href="women.html"><button id="trivia-button">Open Page</button></a> -->
-                              <button id="crystal-github">View Code</button>
-                              <button id="crystal-app">View Application</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flip-card">
-                          <!-- <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="./images/negotiator.png" alt="car" id="negotiator">
-                            </div>
-                            <div class="flip-card-back">
-                              <h3>The Negotiator App</h3>
-                              <p id="card">Car insurance application for car lot sales where a car lot owner can register their lot and a agent can find their information and provide car insurance. Group Project</p>
-                              <!-- <a href="women.html"><button id="trivia-button">Open Page</button></a> -->
-                              <button id="negotiator-github">View Code</button>
-                              <button id="negotiator-app">View Application</button>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="flip-card">
-                          <!-- <h3>The Psychic Game</h3>
-                          <img src="./images/ps-game.png" alt="ps game" id="psychic"> -->
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="./images/software-game.png" alt="engieneer" id="software">
-                            </div>
-                            <div class="flip-card-back">
-                              <h3>Software Engieneer Game</h3>
-                              <p id="card">Trivia game for upcoming software engieneers. User answer questions and score will be tallied, group project.</p>
-                              <!-- <a href="women.html"><button id="trivia-button">Open Page</button></a> -->
-                              <button id="software-github">View Code</button>
-                              <button id="software-app">View Application</button>
-
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <div id="trivia-game">
-                          <h3>90's Trivia</h3>
-                          <a href="https://github.com/Chelsea-exe/unit-4-game.git"><img src="./images/updated-trivi6a.png" alt="90 game" id="trivia"></a>
-                        </div> -->
-                        <!-- <div id="crystal-game">
-                          <h3>Crystal Game</h3>
-                          <a href="https://github.com/Chelsea-exe/Trivia-Game.git"><img src="./images/crystal.png" alt="stone" id="crystal"></a>
-                        </div>
-                        <div id="women">
-                          <h3>Powerful Women Gifs</h3>
-                          <a href="https://github.com/Chelsea-exe/GifTastic.git"><img src="./images/powerful.png" alt="powerwomen" id="powerful"></a>
-                        </div>
-                        <div id="train-hw">
-                          <h3>Train Schedule</h3>
-                          <a href="https://github.com/Chelsea-exe/TrainHW.git"><img src="./images/train.png" alt="train" id="train-schedule"></a>
-                        </div> -->
-                        <!-- <div id="project2">
-                          <h3>The Negotiator</h3>
-                          <a href="https://github.com/DevonMartens/project_2.git"><img src="./images/negotiator.png" alt="insurance" id="negotiator"></a>
-                        </div> -->
-                      </div>
-                    </section>
+    <br>
+    <div id="portfolio-div">
+      <div class="row row-cols-1 row-cols-md-3 portfolio-row">
+        <div class="col mb-4">
+          <div class="card" id="trivia-card">
+            <img src="./images/updated-trivia.png" class="card-img-top" id="trivia-photo" alt="trivia">
+            <div class="card-body">
+              <h4 class="card-title">90's Trivia Game</h4>
+              <p class="card-text">Using Vanilla Javascript and Jquery, user can play a 90's Pop Trivia Game.</p>
+              <button id="trivia-app">application</button> <button class="github-btn" id="trivia-github">github</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="crystal-card">
+            <img src="./images/readME-Crystal-Collector.jpg" class="card-img-top" id="crystal-photo" alt="crystal">
+            <div class="card-body">
+              <h4 class="card-title">The Crystal Collector Game</h4>
+              <p class="card-text">Using Jquery, user plays a random "number to match" by clicking on the crystals.</p>
+              <button id="crystal-app">application</button> <button class="github-btn" id="crystal-github">github</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="gif-card">
+            <img src="./images/ReadME-screenshot.jpg" class="card-img-top" id="gif-photo" alt="gifs">
+            <div class="card-body">
+              <h4 class="card-title">Powerful Women Gifs Search</h4>
+              <p class="card-text">Using the GIPHY API user can add buttons and search women gifs.</p>
+              <button id="gifs-app">application</button> <button class="github-btn" id="gifs-github">github</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="negotiator-card">
+            <img src="./images/negotiator.png" class="card-img-top" id="negotiator-photo" alt="insurance">
+            <div class="card-body">
+              <h4 class="card-title">The Negotiator</h4>
+              <p class="card-text">Car insurance application for car lot sales where a car lot owner can register their lot and a agent can find their information and provide car insurance. Group project.</p>
+              <button id="negotiator-app">application</button> <button class="github-btn" id="negotiator-github">github</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="software-card">
+            <img src="./images/software-game.png" class="card-img-top" id="software-photo" alt="software">
+            <div class="card-body">
+              <h4 class="card-title">Software Engieneer Game</h4>
+              <p class="card-text">Trivia game for upcoming software engieneers, user will be asked series about software engieneering. Group project.</p>
+              <button id="software-app">application</button> <button class="github-btn" id="software-github">github</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container wrap">
+        <div id="footer-header">
+          <h3 id="header">Chelsea Jackson<i class="far fa-copyright fa-xs" id="cj-copyright"></i></h3>
+        </div>
+        <div class="row">
+          <ul id="footer-names">
+            <button class="footer-buttons" id="email"><li><h5>Email</h5></button></li>
+            <button class="footer-buttons"><li id="github"><h5>Github</h5></li></button>
+            <button class="footer-buttons"><li id="linkedin"><h5>LinkedIn</h5></li></button>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./porfolio.js"></script>
 </body>
-<script src="porfolio.js"></script>
 </html>

@@ -1,0 +1,233 @@
+body, html {
+    height: 100%;
+}
+.banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.178)), url(../images/landingimages/landing-jumbotron.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 600px;
+    width: 1490px;
+    margin-top: 50px;
+
+}
+#banner-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: seashell;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 200px;
+    /* margin: 150px 0 0 390px; */
+}
+#banner-sub {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: seashell;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin: 60px 0 0 490px; */
+}
+.nav-names {
+    float: left;
+    list-style: none;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-names li {
+    display: inline-block;
+}
+.nav-names li a {
+    color: rgb(216, 31, 185);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.logo {
+    height: 4vh;
+}
+#bio:hover ~ hr {
+    margin-left: 24%;
+    width: 3vw;
+}
+#portfolio:hover ~ hr {
+    margin-left: 44%;
+    width: 5vw;
+}
+#graphic:hover ~ hr {
+    margin-left: 71%;
+    width: 25%;
+}
+hr {
+    height: 3px;
+    width: 11%;
+    margin: 0 0 0 19px;
+    background-color:rgb(254, 184, 145);
+    border: none;
+    transition: .3s ease-in-out;
+}
+#line-break {
+    width: 1489px;
+    margin: 630px 0 0 -1px;
+}
+#feature-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+
+}
+#feat-sub {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-top: -10px;
+}
+#cards-div {
+    /* margin-top: 100px; */
+    margin: 620px 0 0 0;
+}
+#card-row {
+    margin-left: 100px;
+}
+.card {
+    border-radius: 20px;
+}
+.card-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+#bio-card {
+    width: 260px;
+    height: 380px;
+    margin-left: 140px;
+}
+.card-title {
+    font-family: 'Playfair Display', serif;
+}
+#avi {
+    height: 196px;
+    width: 170px;
+    margin: 10px 0 0 43px;
+    border-radius: 60px;
+}
+#software-card {
+    margin-left: -120px;
+    height: 380px;
+}
+#gifs {
+    border-radius: 20px;
+    margin: 11px 0 0 14px;
+    width: 259px;
+    height: 140px;
+    
+}
+#software {
+    border-radius: 20px;
+    width: 259px;
+    height: 140px;
+    margin: 11px 0 0 14px;
+}
+footer {
+    background-color: rgb(145, 24, 98);
+    margin-top: 50px;
+}
+#footer-header {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    margin-left: -135px;
+}
+#header {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+#cj-copyright {
+    margin-left: 3px;
+}
+#footer-names {
+    list-style: none;
+    margin-top: -10px;
+    margin-left: -160px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+#footer-names li {
+    display: inline-block;
+}
+/* #github {
+    margin-left: 0px;
+} */
+#linkedin {
+    margin-left: 10px;
+}
+.footer-buttons {
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    height: 80px;
+    width: 80px;
+    text-align: left;
+    text-transform: initial;
+    letter-spacing: 1px;
+}
+.footer-buttons:focus {
+    outline: none;
+}
+.footer-buttons:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0);
+    color: rgb(254, 184, 145);
+    font-size: 36px;
+    font-weight: 300;
+}
+#bio-button {
+    margin-top: -20px;
+}
+button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    display:inline-block;
+    text-align:center;
+    font-weight:bold;
+    width: 140px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(238, 3, 148);
+    padding:8px 0px;
+    border:3px solid rgb(238, 3, 148);
+    border-radius: 6px;
+    position:relative; 
+}
+button:hover {
+    background-position: 100% 0;
+    -moz-transition:.8s ease-in-out;
+    -o-transition:.8s ease-in-out;
+    -webkit-transition:.8s ease-in-out;
+    transition:.8s ease-in-out;
+    color: white;
+    background-color: rgb(254, 184, 145);
+    border:3px solid rgb(254, 184, 145);
+}
+button:focus {
+    outline: none;
+}
+#gifs-github {
+    margin-top: 10px;
+}
+#software-github {
+    margin-top: 10px;
+}
+
+#gifs-buttons {
+    margin-top: -40px;
+}
+
+#software-buttons {
+    margin-top: -30px;
+}
+

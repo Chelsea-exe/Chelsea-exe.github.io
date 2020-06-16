@@ -1,4 +1,4 @@
-html {
+body {
     font-family: 'Playfair Display', serif;
     line-height: 28px;
     font-size: 18px;
@@ -29,7 +29,7 @@ html {
 #image-me {
     height: 45vh;
 }
-.card {
+#card {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -78,6 +78,7 @@ h1 {
     background: rgba(34, 32, 26, 0.521);
     height: 45px;
     border-radius: 20px;
+    margin-top: 10px;
 }
 .nav-names {
     list-style: none;
@@ -120,6 +121,14 @@ h1 {
 .content {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
+}
+#paragraph {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    padding: 30px;
+    background: rgba(95, 49, 95, 0.418);
 }
 
 .main {

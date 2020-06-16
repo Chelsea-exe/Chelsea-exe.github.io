@@ -1,17 +1,22 @@
 $(document).ready(function() {
+    $("#graphic").click(function() {
+        event.preventDefault();
+        window.open("https://magicamulet.carbonmade.com/", "_blank");
+        console.log("graphic nav was pressed");
+    });
     $("#trivia-app").click(function() {
-        window.open("https://90strivia.netlify.app/", "_blank")
+        window.open("https://90strivia.netlify.app/", "_blank");
         console.log("90's application window tab");
     });
     $("#trivia-github").click(function() {
-        window.open("https://github.com/Chelsea-exe/unit-4-game", "_blank")
+        window.open("https://github.com/Chelsea-exe/unit-4-game", "_blank");
         console.log("90's github tab");
     });
-    $("#gif-github").click(function() {
-        window.open("https://github.com/Chelsea-exe/GifTastic", "_blank")
+    $("#gifs-github").click(function() {
+        window.open("https://github.com/Chelsea-exe/GifTastic", "_blank");
         console.log("giphy github tab");
     });
-    $("#gif-app").click(function() {
+    $("#gifs-app").click(function() {
         window.open("https://womengiphy.netlify.app/", "_blank");
         console.log("giphy app tab");
     });
@@ -38,5 +43,16 @@ $(document).ready(function() {
     $("#software-app").click(function() {
         window.open("https://gametestapp1.herokuapp.com/");
         console.log("software app tab");
+    });
+    $("#email").click(function() {
+        event.preventDefault();
+        window.open("mailto:c.sjackson726@gmail.com", "_blank");
+    });
+    $("#github").click(function() {
+        // event.preventDefault();
+        window.open("https://github.com/Chelsea-exe", "_blank");
+    });
+    $("#linkedin").click(function() {
+        window.open("https://www.linkedin.com/in/chelsea-s-jackson/", "_blank");
     });
 })
