@@ -234,8 +234,8 @@ button:focus {
     .nav-names {
         /* float: left; */
         list-style: none;
-        margin-top: 10px;
-        margin-left: 50px;
+        margin-top: 20px;
+        margin-left: -55px;
         font-family: 'Roboto Condensed', sans-serif;
     }
     .nav-names li {
@@ -252,22 +252,19 @@ button:focus {
     .logo {
         height: 3vh;
     }
-    /* #bio:hover ~ hr {
-        margin-bottom: 24%;
-        width: 3vw;
+    #bio {
+        margin-top: -7px;
     }
-    #portfolio:hover ~ hr {
-        margin-left: 44%;
-        width: 5vw;
+    #portfolio {
+        margin-top: -10px;
     }
-    #graphic:hover ~ hr {
-        margin-left: 71%;
-        width: 25%;
-    } */
+    #graphic {
+        margin-top: -10px;
+    }
     hr {
         height: 3px;
-        width: 12%;
-        margin: -105px 0 0 25px;
+        width: 17%;
+        margin: -79px 0 0 22px;
         background-color:rgb(254, 184, 145);
         border: none;
         transition: .3s ease-in-out;
@@ -279,7 +276,7 @@ button:focus {
         background-size: cover;
         position: absolute;
         height: 140px;
-        width: 300px;
+        width: 290px;
         margin-top: 120px;
     
     }
@@ -415,7 +412,7 @@ button:focus {
         margin-left: -5px;
     }
     #header {
-        font-size: 12px;
+        font-size: 18px;
         color: rgb(255, 255, 255);
     }
     #cj-copyright {
@@ -432,10 +429,13 @@ button:focus {
         display: inline-block;
     }
     /* #github {
-        margin-left: 0px;
+        font-size: 12px;
     } */
     #linkedin {
         margin-left: 10px;
+    }
+    .foot-btn-header {
+        font-size: 18px;
     }
     .footer-buttons {
         background-color: rgba(255, 255, 255, 0);
@@ -494,3 +494,4 @@ button:focus {
     }
 
   }
+  
