@@ -151,7 +151,7 @@ button:focus {
     margin-right: 40px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -304,7 +304,7 @@ button:focus {
     }
     
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -459,7 +459,7 @@ button:focus {
     }   
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -613,7 +613,7 @@ button:focus {
         margin-right: 24px;
     }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (min-width: 414px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -768,7 +768,7 @@ button:focus {
     } 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 425px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -922,7 +922,7 @@ button:focus {
         margin-right: 42px;
     } 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -1075,7 +1075,7 @@ button:focus {
         margin-right: 42px;
     } 
 }
- @media only screen and (max-width: 1024px) {
+ @media only screen and (min-width: 1024px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
