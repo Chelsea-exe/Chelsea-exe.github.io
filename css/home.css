@@ -60,8 +60,8 @@ body, html {
 }
 hr {
     height: 3px;
-    width: 11%;
-    margin: 0 0 0 1px;
+    width: 8%;
+    margin: 0 0 0 23px;
     background-color:rgb(254, 184, 145);
     border: none;
     transition: .3s ease-in-out;
@@ -108,6 +108,10 @@ hr {
 }
 #software-card {
     margin-left: -120px;
+    height: 380px;
+    width: 290px;
+}
+#gif-card {
     height: 380px;
     width: 290px;
 }
@@ -225,7 +229,67 @@ button:focus {
     margin-top: -30px;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
+    .nav-names li {
+        display: block;
+    }
+    hr {
+        height: 3px;
+        width: 15%;
+        margin: -70px 0 0 23px;
+        background-color:rgb(254, 184, 145);
+        border: none;
+        transition: .3s ease-in-out;
+    }
+    .logo {
+        height: 3vh;
+    }
+    .banner-image {
+        width: 133%;
+        height: 40%;
+        margin-top: 150px;
+    }
+    .nav-names li a {
+        font-size: 12px;
+    }
+    #banner-header {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    #banner-sub {
+        font-size: 12px;
+        margin-top: -5px;
+    }
+    #feature-header {
+        font-size: 20px;
+        margin-top: -250px;
+        margin-left: 150px;
+    }
+    #feat-sub {
+        font-size: 12px;
+        margin-left: 150px;
+    }
+    #bio-card {
+        margin-left: -30px;
+    }
+    #gif-card {
+        margin-left: -45px;
+    }
+    #software-card {
+        margin-left: -45px;
+    }
+    footer {
+        width: 140%;
+    }
+    #footer-header {
+        margin-left: 10px;
+    }
+    #footer-names {
+        margin-left: -15px;
+    }
+}
+
+/* @media only screen and (max-width: 320px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -482,7 +546,7 @@ button:focus {
     }
 
   }
-  @media only screen and (min-width: 360px) {
+  @media only screen and (max-width: 360px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -739,7 +803,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 411px) {
+@media only screen and (max-width: 411px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -996,7 +1060,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -1253,7 +1317,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 414px) {
+@media only screen and (max-width: 414px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -1510,7 +1574,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -1760,7 +1824,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -2009,7 +2073,7 @@ button:focus {
     }
 
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     .nav-names {
         list-style: none;
         margin-top: 20px;
@@ -2257,4 +2321,4 @@ button:focus {
         outline: none;
     }
 
-}
+} */
