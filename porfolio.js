@@ -44,6 +44,12 @@ $(document).ready(function() {
         window.open("https://gametestapp1.herokuapp.com/");
         console.log("software app tab");
     });
+    $("#covid-app").click(function() {
+        window.open("https://covid19-world-tracking.netlify.app/", "_blank");
+    })
+    $("#covid-github").click(function() {
+        window.open("https://github.com/Chelsea-exe/Corona-tracker", "_blank");
+    })
     $("#email").click(function() {
         event.preventDefault();
         window.open("mailto:c.sjackson726@gmail.com", "_blank");
@@ -55,4 +61,5 @@ $(document).ready(function() {
     $("#linkedin").click(function() {
         window.open("https://www.linkedin.com/in/chelsea-s-jackson/", "_blank");
     });
+
 })

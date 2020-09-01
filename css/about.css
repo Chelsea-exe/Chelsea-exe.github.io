@@ -1,120 +1,80 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 .nav-names {
-    float: left;
     list-style: none;
     margin-top: 20px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-names li {
     display: inline-block;
+
 }
 .nav-names li a {
     color: rgb(216, 31, 185);
     text-decoration: none;
     padding: 5px 20px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .logo {
-    height: 4vh;
+    height: 3.8vh;
 }
-#home:hover ~ hr {
-    width: 3vw;
-    margin-left: 18px;
+#bio a {
+    color: lightgoldenrodyellow;
+    background-image: linear-gradient(to right,rgb(214, 61, 128), rgb(255, 208, 108));
+    border-radius: 20px;
 }
-#portfolio:hover ~ hr {
-    margin-left: 43%;
-    width: 5vw;
+#home:hover {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: rgb(255, 208, 108) 1px solid;
 }
-#graphic:hover ~ hr {
-    margin-left: 71%;
-    width: 25%;
+#portfolio:hover {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: rgb(255, 208, 108) 1px solid;
 }
-hr {
-    height: 3px;
-    width: 11%;
-    margin: 0 0 0 100px;
-    background-color:rgb(254, 184, 145);
-    border: none;
-    transition: .3s ease-in-out;
-}
-#about-me-div {
-    margin: 50px 0px 0px 0px;
+#graphic:hover {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: rgb(255, 208, 108) 1px solid;
 }
 #about-me-header {
     font-family: 'Playfair Display', serif;
 }
-#about-me-subheader {
+#about-me-sub {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    border-bottom: rgb(254, 184, 145) solid 2px;
-    font-size: 18px;
-    margin-top: -5px;
-
+    font-weight: 400;
+    border-bottom: rgb(255, 208, 108) 2px solid;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 #about-me-p {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .about-me-group {
     margin-top: 10px;
 }
 .about-img {
     height: 72vh;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+}
+.about-container {
+    padding-bottom: 20px;
+}
+
+.foot-sub {
+    padding-top: 20px;
 }
 footer {
-    background-color: rgb(145, 24, 98);
-    margin-top: 50px;
-}
-#footer-header {
-    font-family: 'Playfair Display', serif;
-    margin-top: 10px;
-    margin-left: -135px;
-}
-#header {
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-}
-#cj-copyright {
-    margin-left: 3px;
-}
-#footer-names {
-    list-style: none;
-    margin-top: -10px;
-    margin-left: -160px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
+    background-color: rgb(204, 24, 129);
+    padding-bottom: 2px;
 }
 #footer-names li {
     display: inline-block;
-}
-/* #github {
-    margin-left: 0px;
-} */
-#linkedin {
-    margin-left: 10px;
-}
-.footer-buttons {
-    background-color: rgba(255, 255, 255, 0);
-    border: rgba(255, 255, 255, 0);
-    color: white;
-    font-size: 36px;
-    font-weight: 300;
-    height: 80px;
-    width: 80px;
-    text-align: left;
-    text-transform: initial;
-    letter-spacing: 1px;
-}
-.footer-buttons:focus {
-    outline: none;
-}
-.footer-buttons:hover {
-    background-color: rgba(255, 255, 255, 0);
-    border: rgba(255, 255, 255, 0);
-    color: rgb(254, 184, 145);
-    font-size: 36px;
-    font-weight: 300;
 }
 button {
     font-family: 'Roboto Condensed', sans-serif;
@@ -129,7 +89,7 @@ button {
     background-color: rgb(252, 252, 252);
     color: rgb(238, 3, 148);
     padding:8px 0px;
-    border:3px solid rgb(238, 3, 148);
+    border:3px solid rgb(204, 24, 129);
     border-radius: 6px;
     position:relative; 
 }
@@ -146,1086 +106,155 @@ button:hover {
 button:focus {
     outline: none;
 }
-#github-btn {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-@media only screen and (max-width: 320px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
+/* #github-btn {
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+@media only screen and (max-width: 768px)
+{
+    nav {
+        width: 15%;
     }
-    .nav-names li {
-        display: block;
+    .foot-sub {
+        width: 15%;
     }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 12px;
-    }
-    
-    .logo {
-        height: 3vh;
-    }
-    hr {
-        height: 3px;
-        width: 28%;
-        margin: -50px 0 0 20px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
-        margin: 50px 0px 0px 0px;
-    }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 24px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 11px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        margin-left: -120px;
+    #about-me-bio {
+        width: 95%;
     }
     .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
+        width: 105%;
     }
-    .about-img {
-        height: 40vh;
-        margin-top: 30px;
-        margin-left: -130px;
-    }
-    footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 50px;
-        width: 290px;
-    }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
-    }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
-    }
-    #header {
-        font-size: 18px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size:8px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 80px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:6px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-}
-@media only screen and (max-width: 360px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: block;
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 12px;
-    }
-    
-    .logo {
-        height: 3vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 28%;
-        margin: -50px 0 0 20px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
+    #about-me-img {
         width: 50%;
-        margin: 50px 0px 0px 110px;
-    }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 24px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 11px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        margin-left: -120px;
-    }
-    .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
     }
     .about-img {
-        height: 35vh;
-        margin-top: 30px;
-        margin-left: -130px;
+        height: 36vh;
     }
-    footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 50px;
-        width: 290px;
-    }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
-    }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
-    }
-    #header {
-        font-size: 18px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size:8px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 75px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:6px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 15px;
-        margin-right: 15px;
-    }   
 }
-
-@media only screen and (max-width: 375px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: block;
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 13px;
-    }
-    
-    .logo {
-        height: 3vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 28%;
-        margin: -50px 0 0 20px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
+/* @media only screen and (max-width: 768px)
+{
+    nav {
         width: 70%;
-        margin: 50px 0px 0px 110px;
     }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 32px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 14px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        margin-left: -120px;
-    }
-    .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
-    }
-    .about-img {
-        height: 38vh;
-        margin-top: 30px;
-        margin-left: -118px;
-    }
-    footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 50px;
-        width: 345px;
-    }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
-    }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 20px;
-    }
-    #header {
-        font-size: 24px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size: 12px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 90px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:6px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-}
-@media only screen and (max-width: 414px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: block;
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 16px;
-    }
-    
-    .logo {
-        height: 4vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 28%;
-        margin: -50px 0 0 20px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
+    .foot-sub {
         width: 70%;
-        margin: 50px 0px 0px 110px;
     }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 33px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 15px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        margin-left: -120px;
+    #about-me-bio {
+        width: 95%;
     }
     .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
+        width: 105%;
+    }
+    #about-me-img {
+        width: 50%;
     }
     .about-img {
-        height: 38vh;
-        margin-top: 30px;
-        margin-left: -130px;
+        height: 36vh;
     }
-    footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 50px;
-        width: 380px;
-    }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
-    }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
-    }
-    #header {
-        font-size: 24px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size: 12px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 95px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:8px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 42px;
-        margin-right: 42px;
-    } 
-}
-
-@media only screen and (max-width: 425px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: block;
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-    
-    .logo {
-        height: 4vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 28%;
-        margin: -50px 0 0 20px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
+} */
+/* @media only screen and (max-width: 1024px)
+{
+    nav {
         width: 70%;
-        margin: 50px 0px 0px 110px;
     }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 33px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
+    .foot-sub {
+        width: 70%;
     }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 15px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        margin-left: -120px;
+    #about-me-bio {
+        width: 95%;
     }
     .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
+        width: 105%;
+    }
+    #about-me-img {
+        width: 50%;
     }
     .about-img {
-        height: 45vh;
-        margin-top: 30px;
-        margin-left: -110px;
+        height: 36vh;
     }
-    footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 50px;
-        width: 395px;
+} */
+/* @media only screen and (max-width: 1024px)
+{
+    nav {
+        width: 15%;
     }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
+    .foot-sub {
+        width: 15%;
     }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
-    }
-    #header {
-        font-size: 24px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size: 12px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 95px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:8px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 42px;
-        margin-right: 42px;
-    } 
-}
-@media only screen and (max-width: 768px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: inline-block;
-
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-    
-    .logo {
-        height: 3vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 11%;
-        margin: 0px 0 0 102px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
-        margin: 50px 0px 0px 110px;
-    }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 33px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 15px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        margin-left: -120px;
+    #about-me-bio {
+        width: 95%;
     }
     .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
+        width: 105%;
+    }
+    #about-me-img {
+        width: 50%;
     }
     .about-img {
-        height: 25vh;
-        margin-top: 220px;
-        margin-left: 10px;
+        height: 36vh;
+    }
+} */
+
+/* @media only screen and (max-width: 375px)
+{
+    nav {
+        width: 15%;
     }
     footer {
-        background-color: rgb(145, 24, 98);
-        margin-top: 207px;
+        width: 100%;
     }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
-    }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
-    }
-    #header {
-        font-size: 24px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
-    }
-    #cj-copyright {
-        margin-left: 3px;
-    }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size: 12px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 95px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding:8px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 42px;
-        margin-right: 42px;
-    } 
-}
- @media only screen and (max-width: 1024px) {
-    .nav-names {
-        list-style: none;
-        margin-top: 20px;
-        margin-left: -55px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .nav-names li {
-        display: inline-block;
-
-    }
-    .nav-names li a {
-        color: rgb(216, 31, 185);
-        text-decoration: none;
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-    
-    .logo {
-        height: 3vh;
-    }
-
-    hr {
-        height: 3px;
-        width: 11%;
-        margin: 0px 0 0 88px;
-        background-color:rgb(254, 184, 145);
-        border: none;
-        transition: .3s ease-in-out;
-    }
-    #about-me-div {
-        margin: 50px 0px 0px 110px;
-        width: 80%;
-    }
-    #about-me-header {
-        font-family: 'Playfair Display', serif;
-        font-size: 40px;
-        margin-top: 50px;
-        margin-left: -120px;
-        
-    }
-    #about-me-subheader {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-bottom: rgb(254, 184, 145) solid 2px;
-        font-size: 18px;
-        margin-top: -5px;
-        margin-left: -120px;
-    }
-    #about-me-p {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 23px;
-        margin-left: -120px;
+    .foot-sub {
+        width: 15%;
     }
     .about-me-group {
-        margin-top: 10px;
-        margin-left: -120px;
+        width: 100%;
+    }
+    #about-me-img {
+        width: 50%;
     }
     .about-img {
-        height: 66vh;
-        margin-top: 450px;
-        margin-left: 10px;
+        height: 36vh;
+    }
+}
+@media only screen and (max-width: 426px)
+{
+    nav {
+        width: 15%;
     }
     footer {
-        background-color: rgb(145, 24, 98);
- 
+        width: 100%;
     }
-    #footer-header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 10px;
-        margin-left: -155px;
+    .foot-sub {
+        width: 15%;
     }
-    .foot-btn-header {
-        margin-left: 130px;
-        font-size: 18px;
+    .about-me-group {
+        width: 100%;
     }
-    #header {
-        font-size: 24px;
-        margin-left: 150px;
-        color: rgb(255, 255, 255);
+    #about-me-img {
+        width: 50%;
     }
-    #cj-copyright {
-        margin-left: 3px;
+    .about-img {
+        height: 36vh;
     }
-    #footer-names {
-        list-style: none;
-        margin-top: -10px;
-        margin-left: -160px;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-    }
-    #footer-names li {
-        display: inline-block;
-    }
-    #linkedin {
-        margin-left: 10px;
-    }
-    .footer-buttons {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        height: 80px;
-        width: 80px;
-        text-align: left;
-        text-transform: initial;
-        letter-spacing: 1px;
-    }
-    .footer-buttons:focus {
-        outline: none;
-    }
-    .footer-buttons:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border: rgba(255, 255, 255, 0);
-        color: rgb(254, 184, 145);
-        font-size: 36px;
-        font-weight: 300;
-    }
-    button {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 300;
-        font-size: 14px;
-        letter-spacing:3px;
-        text-transform:uppercase;
-        display:inline-block;
-        text-align:center;
-        font-weight:bold;
-        width: 105px;
-        background-color: rgb(252, 252, 252);
-        color: rgb(238, 3, 148);
-        padding: 8px 0px;
-        border:2px solid rgb(238, 3, 148);
-        border-radius: 4px;
-        position:relative; 
-    }
-    button:hover {
-        background-position: 100% 0;
-        -moz-transition:.8s ease-in-out;
-        -o-transition:.8s ease-in-out;
-        -webkit-transition:.8s ease-in-out;
-        transition:.8s ease-in-out;
-        color: white;
-        background-color: rgb(254, 184, 145);
-        border:3px solid rgb(254, 184, 145);
-    }
-    button:focus {
-        outline: none;
-    }
-    #github-btn {
-        margin-left: 42px;
-        margin-right: 42px;
-    } 
 }
+@media only screen and (max-width: 768px)
+{
+    nav {
+        width: 70%;
+    }
+    footer {
+        width: 100%;
+    }
+    .foot-sub {
+        width: 100%;
+    }
+    .about-me-group {
+        width: 100%;
+    }
+    #about-me-img {
+        width: 50%;
+    }
+    .about-img {
+        height: 52vh;
+    }
+} */

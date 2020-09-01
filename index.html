@@ -1,97 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chelsea-Exe.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/7c7ff150ec.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/home.css">
+    <title>Chelsea-Exe.</title>
 </head>
 <body>
-  <div class="container-fluid home-container">
-    <header>
-      <nav>
-        <ul class="nav-names">
-          <li id="home"><a href="index.html"><img class="logo" src="./images/logo/pink charm.png"></a></li>
-          <li id="bio"><a href="about.html">ABOUT</a></li>
-          <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
-          <li id="graphic"><a href>GRAPHIC DESIGN</a></li>
-          <!-- <li id="contact"><a href="contact.html">CONTACT</a></li> -->
-          <hr>
-        </ul>
-        </nav>
+  <div id="hero-img">
+    <div class="container">
+      <div class="banner">
+        <h1 id="banner-header">Chelsea Jackson</h1>
+        <p id="banner-sub">Developer, Designer and Photographer.</p>
+        <button id="enter">enter</button>
+      </div>
+    </div>
+  </div>
+  <!-- <footer class="bg-dark sticky-bottom">
+    <div id="covid-foot">
+      <h4 id="foot-name">Website by Chelsea S. Jackson</h4>
+      <button type="button" class="btn btn-info" id="port-foot">Portfolio</button>
+      <button type="button" class="btn btn-info" id="github-foot">Github</button>
+      <button type="button" class="btn btn-info" id="email-foot">Email</button>
+    </div>
+  </footer> -->
+    <!-- <header>
+        <nav>
+            <ul class="nav-names">
+              <li id="home"><a href="index.html"><img class="logo" src="./images/logo/pink charm.png"></a></li>
+              <li id="bio"><a href="about.html">ABOUT</a></li>
+              <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+              <li id="graphic"><a href>GRAPHIC DESIGN</a></li>
+              <hr>
+            </ul>
+            </nav>
     </header>
     <br>
-    <div class="banner-image">
-      <h1 id="banner-header">Chelsea Jackson</h1>
-      <p id="banner-sub">Developer, Designer and Photographer.</p>
+    <div class="jumbotron jumbotron-fluid banner-image">
+        <div class="container header-container">
+            <h1 id="banner-header">Chelsea Jackson</h1>
+            <p id="banner-sub">Developer, Designer and Photographer.</p>
+        </div>
     </div>
-    <br>
-    <div id="cards-div">
-      <h1 id="feature-header">Featured Work</h1>
-      <p id="feat-sub">Selected work displaying Front-End web development.</p>
-      <div class="row" id="card-row">
-        <div class="col-sm">
-          <div class="card" id="bio-card">
-            <img src="./images/20190806_072017592_iOS-50.jpg" class="card-img-top" id="avi" alt="profile-pic">
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <div class="card-deck">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title" id="bio-title">About Chelsea</h5>
-              <p class="card-text" id="bio-text">Learn more about the artist Chelsea Jackson.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            <div class="card-body" id="bio-button">
-              <button id="bio-html">About Me</button>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
-        <div class="col-sm">
-          <div class="card" id="gif-card">
-            <img src="./images/ReadME-screenshot.jpg" id="gifs" class="card-img-top" alt="gif-api">
-            <div class="card-body" id="gifs-body">
-              <h5 class="card-title" id="gifs-title">Powerful Women Gifs</h5>
-              <p class="card-text" id="gifs-text">Using the GIPHY API user can add buttons and search women gifs.</p>
-            </p>
-            </div>
-            <div class="card-body" id="gifs-buttons">
-              <button id="gifs-app">Application</button>
-              <button id="gifs-github">Github</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card" id="software-card">
-            <img src="./images/software-game.png" class="card-img-top" id="software" alt="...">
-            <div class="card-body" id="software-body">
-              <h5 class="card-title" id="software-title">Software Engineer Trivia</h5>
-              <p class="card-text" id="software-text">Timed test game about various Software Engineering skills and topics.</p>
-            </div>
-            <div class="card-body" id="software-buttons">
-              <button id="software-app">Application</button>
-              <button id="software-github">Github</button>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="card-footer text-muted">
       </div>
     </div>
-    <footer>
-      <div class="container wrap">
-        <div id="footer-header">
-          <h3 id="header">Chelsea Jackson<i class="far fa-copyright fa-xs" id="cj-copyright"></i></h3>
-        </div>
-        <div class="row">
-          <ul id="footer-names">
-            <button class="footer-buttons" id="email"><li><h5 class="foot-btn-header">Email</h5></button></li>
-            <button class="footer-buttons"><li id="github"><h5 class="foot-btn-header">Github</h5></li></button>
-            <button class="footer-buttons"><li id="linkedin"><h5 class="foot-btn-header">LinkedIn</h5></li></button>
-          </ul>
-        </div>
+    <footer class="bg-dark sticky-bottom">
+      <div id="covid-foot">
+        <h4 id="foot-name">Website by Chelsea S. Jackson</h4>
+        <button type="button" class="btn btn-info" id="port-foot">Portfolio</button>
+        <button type="button" class="btn btn-info" id="github-foot">Github</button>
+        <button type="button" class="btn btn-info" id="email-foot">Email</button>
       </div>
-    </footer>
-  </div>
-  <script src="index.js"></script>
+    </footer> -->
+    <!-- <div class="card">
+        <div class="card-body">
+            <h1 id="feature-header">Featured Work</h1>
+            <div class="row" id="card-row">
+                <div class="col-sm">
+                  <div class="card" id="bio-card">
+                    <img src="./images/20190806_072017592_iOS-50.jpg" class="card-img-top" id="avi" alt="profile-pic">
+                    <div class="card-body">
+                      <h5 class="card-title" id="bio-title">About Chelsea</h5>
+                      <p class="card-text" id="bio-text">Learn more about the artist Chelsea Jackson.</p>
+                    </div>
+                    <div class="card-body" id="bio-button">
+                      <button id="bio-html">About Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" id="gif-card">
+                    <img src="./images/ReadME-screenshot.jpg" id="gifs" class="card-img-top" alt="gif-api">
+                    <div class="card-body" id="gifs-body">
+                      <h5 class="card-title" id="gifs-title">Powerful Women Gifs</h5>
+                      <p class="card-text" id="gifs-text">Using the GIPHY API user can add buttons and search women gifs.</p>
+                    </p>
+                    </div>
+                    <div class="card-body" id="gifs-buttons">
+                      <button id="gifs-app">Application</button>
+                      <button id="gifs-github">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" id="software-card">
+                    <img src="./images/software-game.png" class="card-img-top" id="software" alt="...">
+                    <div class="card-body" id="software-body">
+                      <h5 class="card-title" id="software-title">Software Engineer Trivia</h5>
+                      <p class="card-text" id="software-text">Timed test game about various Software Engineering skills and topics.</p>
+                    </div>
+                    <div class="card-body" id="software-buttons">
+                      <button id="software-app">Application</button>
+                      <button id="software-github">Github</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div> -->
+    <!-- <div class="container">
+        <div class="banner-image">
+            <h1 id="banner-header">Chelsea Jackson</h1>
+            <p id="banner-sub">Developer, Designer and Photographer.</p>
+          </div>
+    </div> -->
+    <!-- <div class="container banner">
+        <div class="" id="land-img">
+            <div class="header">
+                <h1 id="banner-head">Chelsea Jackson</h1>
+                <h5 id="banner-sub">Developer, Designer and Photographer.</h5>
+                <button id="enter">Enter</button>
+            </div>
+        </div>
+    </div> -->
+    <script src="index.js"></script>
 </body>
 </html>
