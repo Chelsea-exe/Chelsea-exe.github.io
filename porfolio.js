@@ -50,6 +50,12 @@ $(document).ready(function() {
     $("#covid-github").click(function() {
         window.open("https://github.com/Chelsea-exe/Corona-tracker", "_blank");
     })
+    $("#budget-github").click(function() {
+        window.open("https://github.com/Chelsea-exe/budget-app", "_blank");
+    })
+    $("#budget-app").click(function() {
+        window.open("http://upperclassman.netlify.app/", "_blank");
+    })
     $("#email").click(function() {
         event.preventDefault();
         window.open("mailto:c.sjackson726@gmail.com", "_blank");
